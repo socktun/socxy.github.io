@@ -1,0 +1,57 @@
+@import "compass/css3";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+html, body {
+  width: auto;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(248, 248, 248);
+}
+
+div.content {
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+
+div.content > img {
+  max-width: 250px;
+  width: 75%;
+  height: auto;
+}
+
+div.content > span {
+	opacity: 0;
+	animation: cursor 1s infinite;
+  color: #606265;
+  font-size: 2.5em;
+}
+
+@keyframes cursor {
+	0% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
